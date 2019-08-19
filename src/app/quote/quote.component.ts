@@ -19,7 +19,10 @@ export class QuoteComponent implements OnInit {
     new Quote('You Don’t Have To Be Great To Start, But You Have To Start To Be Great','Zig Ziglar',0,0,new Date(2019,9,28),"Admin"),
     new Quote('Kaaa na mama yako','Lonyangapuo',0,0,new Date(2019,12,24),"Admin")
   ];
-
+   
+  addNewQuote(quote){
+    this.quotes.push(quote)
+  }
 
 
   toggleDetails(index){

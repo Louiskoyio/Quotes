@@ -1,25 +1,29 @@
 <div class="container-fluid">
     <h2>Add New Quote</h2>
 <div class="formContainer">
-    <form class="newQuote">
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm' class="newQuote">
+
+
         <div class="form-group">
-  
+         
+            <input type="text" class="form-control" placeholder="What's the quote?" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
+     
+        </div>
+
+        <div class="form-group">
         
-            <input type="text" required class="form-control" id="name" placeholder="Quote">
-  
-        </div>
-        <div class="form-group">
-  
-            <input type="text" required class="form-control" id="author" placeholder="Author">
-  
-        </div>
-        <div class="form-group">
-  
-        
-            <input type="text" required class="form-control" id="name" placeholder="Submitter">
-  
-        </div>
-        <button  class="btn btn-success btnCustom"><span class="glyphicon glyphicon-hand-up"></span>Add Quote</button>
+                <input type="text" placeholder="who authored the quote?" class="form-control" id="author" [(ngModel)]="newQuote.author" author="author" #author='ngModel' required>
+
+            </div>
+
+            <div class="form-group">
+
+                  
+                    <input type="text" placeholder="Your username" class="form-control" id="submitter" [(ngModel)]="newQuote.submitter" submitter="submitter" #submitter='ngModel' required>
+             
+                </div>
+
+        <button type="submit"  class="btn btn-success btnCustom">Add Quote</button>
     </form>
 </div>
   </div>
