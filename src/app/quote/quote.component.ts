@@ -11,7 +11,7 @@ export class QuoteComponent implements OnInit {
   @Input() quote: Quote;
   @Output() isComplete = new EventEmitter<boolean>();
 
-  quotes:Quote[] = [
+   quotes:Quote[] = [
     new Quote('I like nonsense, it wakes up the brain cells. Fantasy is a necessary ingredient in living','Dr. Seuss',0,0,new Date(2019,9,14),"Admin"),
     new Quote('What we see depends mainly on what we look for','Anonymous',0,0,new Date(2019,10,14),"Admin"),
     new Quote('The Way Get Started Is To Quit Talking And Begin Doing','Walt Disney',0,0,new Date(2019,11,14),"Admin"),
