@@ -28,7 +28,7 @@ qContainer{
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
     margin:50px;
     
