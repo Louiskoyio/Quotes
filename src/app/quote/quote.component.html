@@ -1,0 +1,15 @@
+<div>
+    <h1 class="text-center">Quotes</h1>
+    <div class="row qContainer">
+      <div class="quote border border-primary rounded mb-0" *ngFor='let quote of quotes;let i = index'>
+        <p class="quoteText">"{{quote.name}}"</p>– {{quote.author}}<br> <p class="details">Submitted {{quote.submitted|dateCount}}   days ago by {{quote.submitter}} </p> <hr> <pre><b>upvotes:</b>{{quote.upvotes}}   <b>downvotes:</b>{{quote.downvotes}}</pre>
+        
+    
+        <app-quote-detail 
+        *ngIf='quote.showDetail' [quote]='quote'>
+        </app-quote-detail>
+            
+        <button (click)='toggleDetails(i)' class="btn btn-primary btnCustom">Rate Quote</button>
+    </div>
+</div>
+  </div>

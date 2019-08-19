@@ -1,0 +1,19 @@
+
+.newQuote{
+    display: flex;
+
+    flex-direction: row;
+}
+.btnCustom{
+    height: 40px;
+    width: auto;
+}
+
+.form-control{
+    padding: 20px;
+ 
+}
+.formContainer{
+    text-align: center;
+
+}

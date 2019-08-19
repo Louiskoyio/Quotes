@@ -1,0 +1,46 @@
+*{
+    transition: 1s all ease;
+}
+.quoteText{
+    font-family: 'Felipa', cursive;
+    padding: 0;
+}
+.quote{
+    padding: 20px;
+    margin: 60px;
+    border-color: black;
+    text-align: center;
+    font-size: 30px;
+
+    width: 500px;
+
+    
+}
+
+.quote:hover{
+    -webkit-box-shadow: 7px 15px 5px -3px rgba(0,0,0,0.16);
+    -moz-box-shadow: 7px 15px 5px -3px rgba(0,0,0,0.16);
+    box-shadow: 7px 15px 5px -3px rgba(0,0,0,0.16);
+    width:1.05;
+    transition: 1s all ease;
+}
+qContainer{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    padding: 20px;
+    text-align: center;
+    margin:50px;
+    
+}
+
+.btnCustom{
+    font-size: 30px;
+    width: auto;
+    padding: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.details{
+    font-size: 15px;
+}
