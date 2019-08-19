@@ -9,7 +9,7 @@
         
     
         <app-quote-detail 
-        *ngIf='quote.showDetail' [quote]='quote'>
+        *ngIf='quote.showDetail' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'>
         </app-quote-detail>
             
         <button (click)='toggleDetails(i)' class="btn btn-primary btnCustom">Rate Quote</button>

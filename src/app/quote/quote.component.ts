@@ -36,6 +36,16 @@ export class QuoteComponent implements OnInit {
     this.quote.downvotes=this.quote.downvotes+1;
   }
 
+  deleteQuote(isComplete, index){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete this quote`)
+
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
+  }
+
 
   constructor() { }
 
