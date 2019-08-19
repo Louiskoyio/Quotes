@@ -17,7 +17,9 @@ export class QuoteComponent implements OnInit {
     new Quote('The Way Get Started Is To Quit Talking And Begin Doing','Walt Disney',0,0,new Date(2019,11,14),"Admin"),
     new Quote('The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty','Winston Churchill',0,0,new Date(2019,11,14),"Admin"),
     new Quote('You Don’t Have To Be Great To Start, But You Have To Start To Be Great','Zig Ziglar',0,0,new Date(2019,9,28),"Admin"),
-    new Quote('Kaaa na mama yako','Lonyangapuo',0,0,new Date(2019,12,24),"Admin")
+    new Quote('Your time is limited, so don’t waste it living someone else’s life','Steve Jobs',0,0,new Date(2019,12,24),"Admin"),
+    new Quote('Every child is an artist.  The problem is how to remain an artist once he grows up','Pablo Picasso',0,0,new Date(2019,10,24),"Admin"),
+    new Quote('There is only one way to avoid criticism: do nothing, say nothing, and be nothing','Aristotle',0,0,new Date(2019,11,24),"Admin")
   ];
    
   addNewQuote(quote){
